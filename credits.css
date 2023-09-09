@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, #a36231, #753d1c, #753d1c, #a36231);
+}
+header nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    color: #f6c99d;
+    font-family: 'Courgette', cursive;
+    line-height: 12vh;
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(to right, #a36231, #753d1c, #753d1c, #a36231);
+}
+header nav .img{
+    display: flex;
+    background-color: #658030;
+    width: 10vh;
+    height: 10vh;
+    border: 0.5vh solid #f6c99d;
+    border-radius: 5vh;
+    margin-right: 2vh;
+    background-image: url(logo.png);
+    background-size: 125% 125%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+header nav .credits{
+    width: 50vh;
+    display: flex;
+    flex-direction: row;
+    font-size: 8vh;
+    color: #bd956d;
+    cursor: default;
+}
+header nav a{
+    width: 50vh;
+    font-size: 5vh;
+    color: #f6c99d;
+    text-decoration: none;
+}
+header nav a:hover{
+    color: #bd956d;
+    text-decoration: underline;
+}
+section.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 190vh;
+    background-image: radial-gradient(#e8bd4a,  #f8cb68, #ffcd5a, #fff5bf);
+    border: 1vh solid #498b49;
+    border-radius: 5vh;
+    color: #3e467c;
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    margin-top: 12vh;
+}
+section.content section.hero img{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 150vh;
+    height: auto;
+    border: 0.5vh solid #658030;
+    box-shadow: 0 0 1vh 1vh #2a4f2a;
+    margin-bottom: 5vh;
+}
+section.content section.hero .list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 150vh;
+    height: auto;
+    font-size: 4vh;
+}
+section.content section.hero ul{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+section.content section.hero ul.left{
+    margin-right: 25vh;
+}
+section.content section.hero ul.right{
+    margin-left: 25vh;
+}
