@@ -12,7 +12,7 @@ header nav{
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 12vh;
     color: #f6c99d;
     font-family: 'Courgette', cursive;
@@ -24,27 +24,27 @@ header nav{
 header nav .img{
     display: flex;
     background-color: #658030;
-    width: 10vh;
-    height: 10vh;
-    border: 0.5vh solid #f6c99d;
-    border-radius: 5vh;
-    margin-right: 2vh;
-    background-image: url(logo.png);
+    width: 50pt;
+    height: 50pt;
+    border: 1pt solid #f6c99d;
+    border-radius: 25pt;
+    margin-right: 2vw;
+    background-image: url(assets/logo.png);
     background-size: 125% 125%;
     background-position: center center;
     background-repeat: no-repeat;
 }
 header nav .credits{
-    width: 50vh;
+    width: 30vw;
     display: flex;
     flex-direction: row;
-    font-size: 8vh;
+    font-size: 50pt;
     color: #bd956d;
     cursor: default;
 }
 header nav a{
-    width: 50vh;
-    font-size: 5vh;
+    width: 30vw;
+    font-size: 30pt;
     color: #f6c99d;
     text-decoration: none;
 }
@@ -58,10 +58,10 @@ section.content{
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 190vh;
+    height: 175vh;
     background-image: radial-gradient(#e8bd4a,  #f8cb68, #ffcd5a, #fff5bf);
-    border: 1vh solid #498b49;
-    border-radius: 5vh;
+    border: 5pt solid #498b49;
+    border-radius: 50pt;
     color: #3e467c;
     font-weight: bold;
     font-family: 'Patrick Hand', cursive;
@@ -72,10 +72,9 @@ section.content section.hero img{
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 150vh;
+    width: 80vw;
     height: auto;
-    border: 0.5vh solid #658030;
-    box-shadow: 0 0 1vh 1vh #2a4f2a;
+    box-shadow: 0 0 4pt 4pt #20243f;
     margin-bottom: 5vh;
 }
 section.content section.hero .list{
@@ -83,19 +82,13 @@ section.content section.hero .list{
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 150vh;
+    width: 80vw;
     height: auto;
-    font-size: 4vh;
+    font-size: 20pt;
 }
 section.content section.hero ul{
     display: flex;
     flex-direction: column;
+    margin-left: 2vw;
     text-align: left;
-
-}
-section.content section.hero ul.left{
-    margin-right: 25vh;
-}
-section.content section.hero ul.right{
-    margin-left: 25vh;
 }

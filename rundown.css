@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing: 0.25vh;
 }
 body{
     background-image: linear-gradient(to right, #a36231, #753d1c, #753d1c, #a36231);
@@ -25,27 +24,27 @@ header nav{
 header nav .img{
     display: flex;
     background-color: #658030;
-    width: 10vh;
-    height: 10vh;
-    border: 0.5vh solid #f6c99d;
-    border-radius: 5vh;
-    margin-right: 2vh;
-    background-image: url(logo.png);
+    width: 50pt;
+    height: 50pt;
+    border: 1pt solid #f6c99d;
+    border-radius: 25pt;
+    margin-right: 2vw;
+    background-image: url(assets/logo.png);
     background-size: 125% 125%;
     background-position: center center;
     background-repeat: no-repeat;
 }
 header nav .rundown{
-    width: 50vh;
+    width: 30vw;
     display: flex;
     flex-direction: row;
-    font-size: 8vh;
+    font-size: 50pt;
     color: #bd956d;
     cursor: default;
 }
 header nav a{
-    width: 50vh;
-    font-size: 5vh;
+    width: 30vw;
+    font-size: 30pt;
     color: #f6c99d;
     text-decoration: none;
 }
@@ -61,34 +60,35 @@ section.container{
     align-items: center;
     height: 190vh;
     background-image: radial-gradient(#e8bd4a,  #f8cb68, #ffcd5a, #fff5bf);
-    border: 1vh solid #498b49;
-    border-radius: 5vh;
+    border: 5pt solid #498b49;
+    border-radius: 50pt;
     color: #f6c99d;
     font-weight: bold;
     font-family: 'Patrick Hand', cursive;
     margin-top: 12vh;
+    letter-spacing: 2pt;
 }
 section.container section.hero img{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 180vh;
+    width: 80vw;
     height: auto;
-    box-shadow: 0 0 1vh 1vh #20243f;
+    box-shadow: 0 0 4pt 4pt #20243f;
+    margin-top: 5vh;
     margin-bottom: 5vh;
-    margin-top: 3vh;
 }
 section.container .rundown{
     display: grid;
     grid-template-rows: auto auto;
-    grid-row-gap: 1vh;
+    grid-row-gap: 2vh;
 }
 section.container .rundown .top, section.container .rundown .bottom{
     display: grid;
-    box-shadow: 0 0 0.5vh 0.25vh #4a2612;
+    box-shadow: 0 0 2pt 2pt #4a2612;
     background-color: #a36231;
-    font-size: 1.5vh;
+    font-size: 9pt;
 }
 section.container .rundown .day-1, section.container .rundown .day-2{
     display: grid;
@@ -99,29 +99,29 @@ section.container .title{
     grid-template-columns: auto;
     color: #b66a1e;
     background-color: #fbca86;
-    border: 0.25vh solid #753d1c;
+    border: 1.5pt solid #753d1c;
 }
 section.container .number .box{
-    width: 2.5vh;
+    width: 1vw;
     height: 2.5vh;
-    line-height: 1.5vh;
-    border: 0.25vh solid #753d1c;
+    line-height: 2.5vh;
+    border: 1.5pt solid #753d1c;
 }
 section.container .time .box{
-    width: 25vh;
+    width: 10vw;
     height: 2.5vh;
-    line-height: 1.5vh;
-    border: 0.25vh solid #753d1c;
+    line-height: 2.5vh;
+    border: 1.5pt solid #753d1c;
 }
 section.container .location .box{
-    width: 50vh;
+    width: 20vw;
     height: 2.5vh;
-    line-height: 1.5vh;
-    border: 0.25vh solid #753d1c;
+    line-height: 2.5vh;
+    border: 1.5pt solid #753d1c;
 }
 section.container .name .box{
-    width: 75vh;
+    width: 40vw;
     height: 2.5vh;
-    line-height: 1.5vh;
-    border: 0.25vh solid #753d1c;
+    line-height: 2.5vh;
+    border: 1.5pt solid #753d1c;
 }
