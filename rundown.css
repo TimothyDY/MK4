@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(to right, #a36231, #753d1c, #753d1c, #a36231);
+    background-color: black;
 }
 header nav{
     display: grid;
@@ -20,6 +20,10 @@ header nav{
     position: fixed;
     top: 0;
     background-image: linear-gradient(to right, #a36231, #753d1c, #753d1c, #a36231);
+}
+.dark header nav{
+    color: #84a2be;
+    background-image: linear-gradient(to right, #02063f,  #02044b, #041460, #011a7c);
 }
 header nav .img{
     display: flex;
@@ -42,15 +46,72 @@ header nav .rundown{
     color: #bd956d;
     cursor: default;
 }
+.dark header nav .rundown{
+    color: #245685;
+}
 header nav a{
     width: 30vw;
     font-size: 30pt;
     color: #f6c99d;
     text-decoration: none;
 }
+.dark header nav a{
+    color: #84a2be;
+}
 header nav a:hover{
     color: #bd956d;
     text-decoration: underline;
+}
+.dark header nav a:hover{
+    color:#245685;
+}
+header nav .button{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50pt;
+    height: 50pt;
+    border-radius: 50pt;
+    background-color: white;
+    border: 3pt solid black;
+    text-align: center;
+    line-height: 50pt;
+}
+.dark header nav .button{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50pt;
+    height: 50pt;
+    border-radius: 50pt;
+    background-color: black;
+    border: 3pt solid white;
+    text-align: center;
+    line-height: 50pt;
+}
+header nav .button:hover{
+    background-color: black;
+    border: 3pt solid black;
+    cursor: pointer;
+}
+.dark header nav .button:hover{
+    background-color: white;
+    border: 3pt solid white;
+    cursor: pointer;
+}
+header nav .button span{
+    font-size: 25pt;
+}
+header nav .button span.theme::after{
+    content: "🌚";
+}
+.dark header nav .button span.theme::after{
+    content: "🌞";
+}
+.dark header nav {
+    color: white;
+    background-color: black;
+    transition: 0.5s ease;
 }
 section.container{
     display: flex;
@@ -68,6 +129,11 @@ section.container{
     margin-top: 12vh;
     letter-spacing: 2pt;
 }
+.dark section.container{
+    background-image: radial-gradient(#000329,  #000238, #010c44, #000e44);
+    border: 5pt solid #84a2be;
+    color: #9b9fbf;
+}
 section.container section.hero img{
     display: flex;
     justify-content: center;
@@ -78,6 +144,9 @@ section.container section.hero img{
     box-shadow: 0 0 4pt 4pt #20243f;
     margin-top: 5vh;
     margin-bottom: 5vh;
+}
+.dark section.container section.hero img{
+    box-shadow: 0 0 4pt 4pt #9b9fbf;
 }
 section.container .rundown{
     display: grid;
@@ -90,6 +159,10 @@ section.container .rundown .top, section.container .rundown .bottom{
     background-color: #a36231;
     font-size: 9pt;
 }
+.dark section.container .rundown .top, .dark section.container .rundown .bottom{
+    box-shadow: 0 0 2pt 2pt #62678a;
+    background-color: #070e36;
+}
 section.container .rundown .day-1, section.container .rundown .day-2{
     display: grid;
     grid-template-columns: auto auto auto auto
@@ -101,11 +174,19 @@ section.container .title{
     background-color: #fbca86;
     border: 1.5pt solid #753d1c;
 }
+.dark section.container .title{
+    color: #84a2be;
+    background-color: #070e36;
+    border: 1.5pt solid #62678a;
+}
 section.container .number .box{
     width: 1vw;
     height: 2.5vh;
     line-height: 2.5vh;
     border: 1.5pt solid #753d1c;
+}
+.dark section.container .number .box{
+    border: 1.5pt solid #62678a;
 }
 section.container .time .box{
     width: 10vw;
@@ -113,15 +194,24 @@ section.container .time .box{
     line-height: 2.5vh;
     border: 1.5pt solid #753d1c;
 }
+.dark section.container .time .box{
+    border: 1.5pt solid #62678a;
+}
 section.container .location .box{
     width: 20vw;
     height: 2.5vh;
     line-height: 2.5vh;
     border: 1.5pt solid #753d1c;
 }
+.dark section.container .location .box{
+    border: 1.5pt solid #62678a;
+}
 section.container .name .box{
     width: 40vw;
     height: 2.5vh;
     line-height: 2.5vh;
     border: 1.5pt solid #753d1c;
+}
+.dark section.container .name .box{
+    border: 1.5pt solid #62678a;
 }
