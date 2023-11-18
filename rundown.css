@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-image: linear-gradient(to right, black, white);
 }
 header nav{
     display: grid;
@@ -32,6 +32,7 @@ header nav .img{
     height: 50pt;
     border: 1pt solid #f6c99d;
     border-radius: 25pt;
+    margin-top: 1.25vh;
     margin-right: 2vw;
     background-image: url(assets/logo.png);
     background-size: 125% 125%;
@@ -67,27 +68,19 @@ header nav a:hover{
 }
 header nav .button{
     position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 50pt;
-    height: 50pt;
-    border-radius: 50pt;
+    top: 6px;
+    right: 6px;
+    width: 55pt;
+    height: 55pt;
+    border-radius: 55pt;
     background-color: white;
     border: 3pt solid black;
     text-align: center;
     line-height: 50pt;
 }
 .dark header nav .button{
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 50pt;
-    height: 50pt;
-    border-radius: 50pt;
     background-color: black;
     border: 3pt solid white;
-    text-align: center;
-    line-height: 50pt;
 }
 header nav .button:hover{
     background-color: black;
@@ -97,7 +90,6 @@ header nav .button:hover{
 .dark header nav .button:hover{
     background-color: white;
     border: 3pt solid white;
-    cursor: pointer;
 }
 header nav .button span{
     font-size: 25pt;
@@ -127,7 +119,6 @@ section.container{
     font-weight: bold;
     font-family: 'Patrick Hand', cursive;
     margin-top: 12vh;
-    letter-spacing: 2pt;
 }
 .dark section.container{
     background-image: radial-gradient(#000329,  #000238, #010c44, #000e44);
@@ -151,16 +142,16 @@ section.container section.hero img{
 section.container .rundown{
     display: grid;
     grid-template-rows: auto auto;
-    grid-row-gap: 2vh;
+    grid-row-gap: 3vh;
 }
 section.container .rundown .top, section.container .rundown .bottom{
     display: grid;
     box-shadow: 0 0 2pt 2pt #4a2612;
     background-color: #a36231;
-    font-size: 9pt;
+    font-size: 7pt;
 }
 .dark section.container .rundown .top, .dark section.container .rundown .bottom{
-    box-shadow: 0 0 2pt 2pt #62678a;
+    box-shadow: 0 0 1pt 1pt #62678a;
     background-color: #070e36;
 }
 section.container .rundown .day-1, section.container .rundown .day-2{
@@ -173,6 +164,7 @@ section.container .title{
     color: #b66a1e;
     background-color: #fbca86;
     border: 1.5pt solid #753d1c;
+    letter-spacing: 3pt;
 }
 .dark section.container .title{
     color: #84a2be;
@@ -193,6 +185,7 @@ section.container .time .box{
     height: 2.5vh;
     line-height: 2.5vh;
     border: 1.5pt solid #753d1c;
+    letter-spacing: 2pt;
 }
 .dark section.container .time .box{
     border: 1.5pt solid #62678a;
@@ -202,6 +195,7 @@ section.container .location .box{
     height: 2.5vh;
     line-height: 2.5vh;
     border: 1.5pt solid #753d1c;
+    letter-spacing: 2pt;
 }
 .dark section.container .location .box{
     border: 1.5pt solid #62678a;
@@ -211,6 +205,7 @@ section.container .name .box{
     height: 2.5vh;
     line-height: 2.5vh;
     border: 1.5pt solid #753d1c;
+    letter-spacing: 3pt;
 }
 .dark section.container .name .box{
     border: 1.5pt solid #62678a;

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-image: linear-gradient(to right, black, white);
 }
 header nav{
     display: grid;
@@ -32,6 +32,7 @@ header nav .img{
     height: 50pt;
     border: 1pt solid #f6c99d;
     border-radius: 25pt;
+    margin-top: 1.25vh;
     margin-right: 2vw;
     background-image: url(assets/logo.png);
     background-size: 125% 125%;
@@ -67,27 +68,19 @@ header nav a:hover{
 }
 header nav .button{
     position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 50pt;
-    height: 50pt;
-    border-radius: 50pt;
+    top: 6px;
+    right: 6px;
+    width: 55pt;
+    height: 55pt;
+    border-radius: 55pt;
     background-color: white;
     border: 3pt solid black;
     text-align: center;
     line-height: 50pt;
 }
 .dark header nav .button{
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 50pt;
-    height: 50pt;
-    border-radius: 50pt;
     background-color: black;
     border: 3pt solid white;
-    text-align: center;
-    line-height: 50pt;
 }
 header nav .button:hover{
     background-color: black;
@@ -153,11 +146,12 @@ section.content section.hero .list{
     align-items: center;
     width: 80vw;
     height: auto;
-    font-size: 20pt;
+    font-size: 15pt;
 }
 section.content section.hero ul{
     display: flex;
     flex-direction: column;
-    margin-left: 2vw;
+    margin-left: 1vw;
+    width: 19vw;
     text-align: left;
 }
